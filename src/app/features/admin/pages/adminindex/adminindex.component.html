@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-5">
+         <h1 class="text-center">غرفة التحكم</h1>
+        </div>
+        <div class="col-6 mt-5">
+           <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">اضافة مدونة</h2>
+            </div>
+            <div class="col-12 mt-5 d-flex justify-content-center">
+              <input/>اسم المدونة
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-3">
+                <editor [(ngModel)]="editortext"  id="editorr" [init]="editorConfig"></editor>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <button (click)="click()">اضافة</button>
+            </div>
+           </div>
+        </div>
+        <div class="col-6">
+
+        </div>
+       
+      
+    </div>
+</div>

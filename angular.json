@@ -34,12 +34,20 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {"glob":"**/*","input": "node_modules/tinymce","output": "/tinymce/"}
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/font.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/tinymce/tinymce.min.js"
+            ]
           },
           "configurations": {
             "production": {
