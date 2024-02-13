@@ -1,9 +1,13 @@
 <div class="container-fluid">
-    <div class="row d-flex justify-content-center" style="margin-top:10em;">
+    <div class="row d-flex justify-content-center" style="margin-top:5em;">
         <div class="col-10">
-            <div [innerHtml]="html |safehtml">
+            <h1 class="text-center " style="margin-bottom:2.5em;">{{blog.blogname}}</h1>
+            <div [innerHtml]="this.blog.bloghtml |safehtml">
 
             </div>
+        </div>
+        <div style="margin-top:4em;">
+            <app-blogs></app-blogs>
         </div>
     </div>
 </div>

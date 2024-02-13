@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CoreComponent } from './core/core.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { KaratComponent } from './components/karat/karat.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path:"blog/:id",component:BlogComponent
+  },
+  {
+    path:"karat/:karat",component:KaratComponent
   },
   {
     path: 'features',

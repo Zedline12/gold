@@ -1,24 +1,23 @@
 <div class="conatiner-fluid">
-    <div class="row">
-        <div class="col-12 mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 mt-5" style="">
             <h1 class="header text-center">اسعار الذهب</h1>
         </div>
-        <div style="margin-top:5em;">
+        <div clas="col-12" style="margin-top:5em;">
             <h4 class="lt text-center mb-3">اسعار الذهب في السعودية</h4>
-            <app-table></app-table>
+            <app-maintable></app-maintable>
         </div>
-        <div style="margin-top:10em;">
-            <h4 class="lt text-center mb-3">اسعار شراء سبائك الذهب عيار 24</h4>
-            <app-table></app-table>
-        </div>
-        <div style="margin-top:10em;">
+        <div class=" history col-12" style="margin-top:5em;
+        overflow-y:scroll;">
             <h4 class="lt text-center mb-3">اسعار جرام الذهب في الايام السابقة</h4>
-            <app-table></app-table>
+            <history-table></history-table>
+        </div>
+        <div style="margin-top:5em;">
+            <h4 class="lt text-center mb-3">أسعار الذهب اليوم في السعودية بيع وشراء</h4>
+            <app-commission-table></app-commission-table>
         </div>
     </div>
-    <div style="margin-top:10em;" class="row">
-        <div *ngFor="let blog of blogs" [routerLink]="[ '/blog',blog.id]" class="col-12 blog bg-white">
-            <h5 class="text-center">{{blog.blogname}}</h5>
-         </div>
+    <div style="margin-top:5em;" class="row">
+       <app-blogs></app-blogs>
     </div>
 </div>

@@ -2,8 +2,8 @@
 body{
     background-color:$background;
 }
-@media(max-width:385px) {
+@media(max-width:540px) {
     .body{
-        width:85% !important;
+        width:95% !important;
     }
 }

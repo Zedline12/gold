@@ -1,0 +1,35 @@
+
+<h2 class="text-center" style="margin-top:2em;">{{title}}</h2>
+<div class="table bg-white container-fluid" style="margin-top:8em;">
+    <div  class="header-row row">
+    
+     <div  class="col-6">
+      <h5>{{karatt.date |date:"yyyy-MM-dd"}}</h5>
+     </div>
+     <div style="" class="col-6 border-left">
+       <h5>اسعار جرام الذهب اليوم</h5>
+     </div>
+    </div>
+    <div class="body-row row">
+      <div class="col-3">
+        <h5 class="text-center">السعر بالدولار</h5>
+      </div>
+      <div class="col-3">
+        <h5 class="text-center">السعر بالريال</h5>
+      </div>
+      <div class="col-6 border-left">
+        <h5 class="text-center">الوحدة</h5>
+      </div>
+    </div>
+    <div  class="body-row row">
+        <div class="col-3">
+          <h5 class="text-center">{{karatt.karatusd}}</h5>
+        </div>
+        <div class="col-3">
+          <h5 class="text-center">{{(karatt.karatsar + const(karat)!.new).toFixed(2)}}</h5>
+        </div>
+        <div  class="col-6 border-left">
+          <h5 class="arabic text-center">{{title}}</h5>
+        </div>
+      </div>
+</div>

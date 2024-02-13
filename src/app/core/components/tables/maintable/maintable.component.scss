@@ -1,0 +1,44 @@
+@import "../../../../../variables";
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+*{
+    font-family:"ltarabic";
+    
+}
+
+.header-row,.header-row h5{
+    color:white;
+background-color: $secondary;
+}
+span{
+    margin-right:5px;
+}
+@media(max-width:558px){
+    h5,h6{
+        font-size:1em !important;
+    }
+}
+@media(max-width:400px){
+    h5,h6{
+        font-size:1em !important;
+        margin: 0px;
+        padding:0px;
+        padding-bottom:10px;
+        padding-top:15px;
+    }
+    .border-left{
+        border-left:1px solid #A19EA1 !important;
+    }
+}
+h5,h6{
+   font-size:1.1em;
+    text-align: center;
+    
+    background-color: transparent;
+}
+.border-left{
+    border-left:3px solid #A19EA1;
+}
+.col-3,.col-6{
+    border:1px solid #A19EA1;
+}
+.body-row:nth-child(even){background-color: #E0DDE0;}

@@ -1,0 +1,43 @@
+<div class=" table bg-white container-fluid">
+    <div  class="header-row row">
+        <div style="" class="col-2 border-left">
+            <h5>عيار 14</h5>
+          </div>
+        <div style="" class="col-2 border-left">
+            <h5>عيار 18</h5>
+          </div>
+        <div style="" class="col-2 border-left">
+            <h5>عيار 21</h5>
+          </div>
+        <div style="" class="col-2 border-left">
+            <h5>عيار 22</h5>
+          </div>
+        <div style="" class="col-2 border-left">
+            <h5>عيار 24</h5>
+          </div>
+     <div style="" class="col-2 border-left">
+       <h5>التاريخ</h5>
+     </div>
+    </div>
+    <div *ngFor="let sar of sarhistory" class="body-row row">
+        <div class="col-2">
+            <h5 class="text-center">{{(sar.karat_14 +const('karat_14')!.new).toFixed(2)}}</h5>
+          </div>
+        <div class="col-2 border-left">
+            <h5 class="text-center">{{(sar.karat_18 +const('karat_18')!.new).toFixed(2)}}</h5>
+          </div>
+        <div class="col-2 border-left">
+            <h5 class="text-center">{{(sar.karat_21 +const('karat_21')!.new).toFixed(2)}}</h5>
+          </div>
+        <div class="col-2 border-left">
+            <h5 class="text-center">{{(sar.karat_22 +const('karat_22')!.new).toFixed(2)}}</h5>
+          </div>
+      <div class="col-2 border-left">
+        <h5 class="text-center">{{(sar.karat_24 +const('karat_24')!.new).toFixed(2)}}</h5>
+      </div>
+      <div class="col-2 border-left">
+        <h5 class="text-center">{{sar._date |date:"yyyy/MM/dd"}}</h5>
+      </div>
+    </div>
+  
+</div>

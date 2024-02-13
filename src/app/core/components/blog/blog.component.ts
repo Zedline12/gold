@@ -2,6 +2,7 @@ import { Component ,Input, OnInit,ViewEncapsulation} from '@angular/core';
 import { blog } from '../../models/blog';
 import { ActivatedRoute } from '@angular/router';
 import { BlogService } from '../../services/blog.service';
+import {Title} from "@angular/platform-browser";
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -9,9 +10,9 @@ import { BlogService } from '../../services/blog.service';
   encapsulation: ViewEncapsulation.None
 })
 export class BlogComponent implements OnInit{
-  constructor(private route:ActivatedRoute,private blogserv:BlogService){
+  constructor(private titleService:Title,private route:ActivatedRoute,private blogserv:BlogService){
   }
-  html!:string;
+
   blog!:blog;
   ngOnInit(): void {
    var id:number;
@@ -19,8 +20,7 @@ export class BlogComponent implements OnInit{
       id=params['id']
       this.blogserv.getblog(id).subscribe(x=>{
        this.blog=x;
-       this.html=x.bloghtml
-       console.log(this.html)
+       this.titleService.setTitle(this.blog.blogname)
       })
     })
   }
