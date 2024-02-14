@@ -1,6 +1,6 @@
-
-<h2 class="text-center" style="margin-top:2em;">{{title}}</h2>
-<div class="table bg-white container-fluid" style="margin-top:8em;">
+<h4 class="text-center " style="margin-top:6em;">سعر جرام الذهب عيار {{eyar}}</h4>
+<h4 style="margin-top:0em;" class="lastupdate">اخر تحديث منذ<span style="margin:7px;">{{lastupdate}}</span>دقيقة <i class="bi bi-clock"></i></h4>
+<div class="table bg-white container-fluid">
     <div  class="header-row row">
     
      <div  class="col-6">
@@ -32,4 +32,71 @@
           <h5 class="arabic text-center">{{title}}</h5>
         </div>
       </div>
+</div>
+<h4 class="text-center" style="margin-top:4em; margin-bottom:1em;">اسعار عيار {{eyar}} في الايام السابقة</h4>
+<div class="historytable table bg-white container-sm" >
+    <div  class="header-row row">
+        <div style="" class="col-6 border-left">
+            <h5>عيار 24</h5>
+          </div>
+     <div style="" class="col-6 border-left">
+       <h5>التاريخ</h5>
+     </div>
+    </div>
+    <div *ngFor="let sar of sarhistory" class="body-row row">
+      <div class="col-6 border-left">
+        <h5 class="text-center">{{(sar.karatt +const(karat)!.new).toFixed(2)}}</h5>
+      </div>
+      <div class="col-6 border-left">
+        <h5 class="text-center">{{sar._date |date:"yyyy/MM/dd"}}</h5>
+      </div>
+    </div>
+  
+</div>
+<h4 class="text-center" style="margin-top:4em; margin-bottom:0em;">اسعار عيار {{eyar}} في المحلات التجارية</h4>
+<h4 class="lastupdate">اخر تحديث منذ<span style="margin:7px;">{{lastupdate}}</span>دقيقة <i class="bi bi-clock"></i></h4>
+<div class="table bg-white container-fluid">
+    <div  class="header-row row">
+    
+     <div  class="col-6">
+      <h5>{{sar._date |date:"yyyy-MM-dd"}}</h5>
+     </div>
+     <div style="" class="col-6 border-left">
+       <h5>اسعار البيع و شراء</h5>
+     </div>
+    </div>
+    <div class="body-row row">
+        <div class="col-3">
+          <h5 class="text-center">شراء جديد</h5>
+        </div>
+        <div class="col-3">
+          <h5 class="text-center">بيع مستعمل</h5>
+        </div>
+        <div class="col-6 border-left">
+          <h5 class="text-center"></h5>
+        </div>
+      </div>
+    <div class="body-row row">
+      <div class="col-3">
+        <h5 class="text-center">السعر بالريال</h5>
+      </div>
+      <div class="col-3">
+        <h5 class="text-center">السعر بالريال</h5>
+      </div>
+      <div class="col-6 border-left">
+        <h5 class="text-center">الوحدة</h5>
+      </div>
+    </div>
+      <div class="body-row row">
+        <div class="col-3">
+          <h5 class="text-center">{{(karatt.karatsar +const('karat_24')!.new).toFixed(2) }}</h5>
+        </div>
+        <div class="col-3">
+          <h5 class="text-center">{{karatt.karatsar}}</h5>
+        </div>
+        <div class="col-6 border-left">
+          <h5 class="arabic text-center">سعر جرام الذهب عيار <span>{{eyar}}</span></h5>
+        </div>
+      </div>
+     
 </div>

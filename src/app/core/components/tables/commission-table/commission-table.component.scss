@@ -4,7 +4,30 @@
     font-family:"ltarabic";
     
 }
-
+.lastupdate{
+    text-align: end;
+    font-size: 1.2em;
+    margin-bottom:1em;
+    margin-right:1em;
+    opacity: 0.8;
+}
+.lastupdate i{
+    margin-left:7px;
+}
+@media(max-width:850px){
+    .lastupdate{
+        text-align: center !important;
+        font-size:1.1em !important;
+        margin-top:2em !important;
+        margin-left:1.5em !important;
+    }
+}
+@media(max-width:1000px) and (min-width:851px){
+    .lastupdate{
+        text-align: center !important;
+        margin-top:2em !important;
+    }
+}
 .header-row,.header-row h5{
     color:white;
 background-color: $secondary;
