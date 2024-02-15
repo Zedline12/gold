@@ -13,6 +13,7 @@ export class MaintableComponent implements OnInit {
   sarounce!:string
   usdounce!:string
   lastupdate!:number
+  ishour!:boolean
   constants:{id:number,karat:string,new:number,used:number}[]=[]
   constructor(private tableserv:TableService){
 
@@ -32,10 +33,14 @@ export class MaintableComponent implements OnInit {
     })
     this.tableserv.getusd().subscribe(x=>{
       this.usd=x
-     
-     const date= moment.utc(this.usd._date).local().format('YYYY-MM-DD HH:mm:ss')
-      this.lastupdate=Number(moment(date).fromNow().replace(/\D/g,''));
       
+     const date= moment.utc(this.usd._date).local().format('YYYY-MM-DD HH:mm:ss')
+      const text= moment(date).fromNow().replace(/[^a-z]/gi, '')
+      if(text=="hoursago"){
+        this.ishour=true
+      }
+      this.lastupdate=Number(moment(date).fromNow().replace(/\D/g,''));
+      this.lastupdate
       this.usdounce=x.ounce.toString().slice(0,1)+","+x.ounce.toString().slice(1)
     })
     this.tableserv.getsar().subscribe(x=>{
