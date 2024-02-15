@@ -15,6 +15,7 @@ export class BlogComponent implements OnInit{
 
   blog!:blog;
   ngOnInit(): void {
+    window.scroll(0,0);
    var id:number;
     this.route.params.subscribe(params=>{
       id=params['id']

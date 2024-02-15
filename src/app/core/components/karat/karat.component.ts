@@ -26,6 +26,7 @@ export class KaratComponent {
     return this.constants.find(x=>x.karat==karat)
    }
   ngOnInit() {
+    window.scroll(0,0);
     this.tableserv.getsarhistory().subscribe(x=>{
       this.sarhistory=x
       this.sarhistory.map((x)=>{

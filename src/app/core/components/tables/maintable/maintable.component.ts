@@ -33,14 +33,24 @@ export class MaintableComponent implements OnInit {
     })
     this.tableserv.getusd().subscribe(x=>{
       this.usd=x
-      
+      const datedetails=moment.utc(this.usd._date).local();
      const date= moment.utc(this.usd._date).local().format('YYYY-MM-DD HH:mm:ss')
       const text= moment(date).fromNow().replace(/[^a-z]/gi, '')
+      //console.log(moment(date).fromNow())
+      
       if(text=="hoursago"){
         this.ishour=true
       }
-      this.lastupdate=Number(moment(date).fromNow().replace(/\D/g,''));
-      this.lastupdate
+      if(text=="an hour ago"){
+        
+      }
+     // this.lastupdate=Number(moment(date).fromNow().replace(/\D/g,''));
+      if(new Date().getMinutes()==59){
+        this.lastupdate=0
+      }
+      else{
+        this.lastupdate=new Date().getMinutes()+1
+      }
       this.usdounce=x.ounce.toString().slice(0,1)+","+x.ounce.toString().slice(1)
     })
     this.tableserv.getsar().subscribe(x=>{
