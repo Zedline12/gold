@@ -1,4 +1,5 @@
+import { environment } from '../../environments/environment';
 
 export class api{
-    url="http://192.168.1.8:3000"
+    url=environment.API_URL
 }
