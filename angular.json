@@ -66,9 +66,17 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "optimization":{
+              "fonts":{
+                "inline":true
+              },
+              "styles":{
+                "inlineCritical":true
+              }
             }
           },
           "defaultConfiguration": "production"
