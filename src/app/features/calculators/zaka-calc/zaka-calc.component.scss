@@ -1,0 +1,120 @@
+@import "../../../../variables";
+@media(max-width:360px){
+    .tablediv{
+        width:60% !important;
+    }
+    .calcheader{
+        font-size:1.5em !important;
+    }
+    .form-control{
+        width:100%;
+       }
+       .tablediv h5{
+        font-size: 1.1em;
+       }
+}
+@media(max-width:400px) and (min-width:361px){
+    .calcheader{
+        font-size:1.3em !important;
+       }
+
+       .form-control{
+        width:100%;
+       }
+       .tablediv h5{
+        font-size: 1.1em;
+       }
+       .note{
+        font-size:0.9em !important;
+         }
+}
+@media(max-width:540px) and (min-width:401px){
+ .tablediv h5{
+  font-size: 1.1em;
+ }
+ .note{
+    font-size:1em !important;
+     }
+}
+@media(max-width:600px) and (min-width:401px){
+    .calcheader{
+     font-size:1.4em !important;
+    }
+    .note{
+        font-size:1em !important;
+    }
+}
+.directions h4{
+    font-size:1.1em;
+    margin-top:1.5em;
+    text-align: center;
+}
+.directions h3{
+    margin-top:1.5em;
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+.weight{
+    background-color: #E0DDE0;
+    color:black;
+}
+.price{
+    background-color:white;
+}
+.header{
+    text-align: center;
+    color:$secondary;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+ }
+ .inputdiv{
+    margin-top:2em;
+ }
+ input{
+    width:30%;
+ }
+ .tablediv{
+    margin-top:2em;
+ }
+ .notediv{
+    margin-top:3em;
+ }
+ .note{
+   text-align: center;
+   
+   opacity: 0.7;
+ }
+ .note i{
+    font-size: 1.2em;
+    text-align: center;
+    margin-left:0.5em;
+ }
+ .buttondiv{
+    margin-top:2em;
+ }
+.button-2 {
+  background-color:$secondary;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}

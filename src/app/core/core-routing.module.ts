@@ -10,6 +10,7 @@ const routes: Routes = [
   {
     path:"core",component:CoreComponent
   },
+ 
   {
     path:"home",component:HomeComponent
   },

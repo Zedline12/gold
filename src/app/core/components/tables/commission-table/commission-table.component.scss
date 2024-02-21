@@ -1,5 +1,5 @@
 @import "../../../../../variables";
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 *{
     font-family:"ltarabic";
     
@@ -37,6 +37,7 @@ background-color: $secondary;
 }
 span{
     margin-right:5px;
+    font-family: "Readex Pro", sans-serif;
 }
 @media(max-width:558px){
     h5,h6{
@@ -56,9 +57,9 @@ span{
     }
 }
 h5,h6{
-   font-size:1.1em;
+   font-size:1em;
     text-align: center;
-   
+    font-family: "Readex Pro", sans-serif;
     background-color: transparent;
 }
 .border-left{

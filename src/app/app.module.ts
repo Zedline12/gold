@@ -8,17 +8,19 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './core/home/home.component';
 import { FeaturesModule } from './features/features/features.module';
+import { PriceCalcComponent } from './features/calculators/price-calc/price-calc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     CoreModule,
-    FeaturesModule
+    FeaturesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

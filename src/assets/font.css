@@ -3,3 +3,7 @@
   font-family:"ltarabic";
   src: url("../assets/fonts/DINNextLTArabic-Regular.woff2") ;
 }
+@font-face {
+  font-family:"montserrat";
+  src: url("../assets/fonts/Montserrat-Arabic-Bold.woff2") ;
+}

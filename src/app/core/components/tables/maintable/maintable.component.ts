@@ -38,11 +38,13 @@ export class MaintableComponent implements OnInit {
      const hours=moment().hours()-moment(this.usd._date).local().hours()
      if(hours!=0){
       this.ishour=true
-      this.lastupdate=hours
+     // this.lastupdate=hours
+     this.lastupdate=Number(moment(this.usd._date).fromNow().replace(/\D/g,''));
      }
      else{
       const minutes=moment().minutes()-moment(this.usd._date).local().minutes()
-      this.lastupdate=minutes;
+      this.lastupdate=Number(moment(this.usd._date).fromNow().replace(/\D/g,''));
+   //   this.lastupdate=minutes;
      }
       this.usdounce=x.ounce.toString().slice(0,1)+","+x.ounce.toString().slice(1)
     })

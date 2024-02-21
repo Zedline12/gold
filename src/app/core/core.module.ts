@@ -17,7 +17,8 @@ import { MaintableComponent } from './components/tables/maintable/maintable.comp
 import { HistoryTableComponent } from './components/tables/history-table/history-table.component';
 import { CommissionTableComponent } from './components/tables/commission-table/commission-table.component';
 import { KaratComponent } from './components/karat/karat.component';
-
+import { SbaektableComponent } from './components/tables/sbaektable/sbaektable.component';
+import { PricePipe } from './pipes/price.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { KaratComponent } from './components/karat/karat.component';
     MaintableComponent,
     HistoryTableComponent,
     CommissionTableComponent,
-    KaratComponent
+    SbaektableComponent,
+    KaratComponent,
+    PricePipe,
   ],
   imports: [
     CommonModule,
@@ -40,7 +43,9 @@ import { KaratComponent } from './components/karat/karat.component';
   ],
   exports:[
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MaintableComponent,
+    SbaektableComponent
   ],providers:[
     BlogService,TableService
   ]
