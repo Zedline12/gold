@@ -13,28 +13,30 @@
         <div class="inputdiv col-lg-4 col-sm-6 col-8 ">
             <div *ngIf="screenWidth>=400">
               <div class="input-group">
-                 <input dir="rtl" type="text" class="form-control" value="1" />
-                 <span   class="selectspan">
-                    <select  class="form-select" aria-label="Default select example">
-                        <option selected>اختر العيار</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                 <input style="z-index:-1" [(ngModel)]="gram" dir="rtl" type="text" class="form-control" value="1" />
+                 <span style="z-index:-1"  class="selectspan">
+                    <select [(ngModel)]="multi" class="form-select" aria-label="Default select example">
+                        <option value="{{sar.karat_24}}" selected>عيار 24</option>
+                        <option value="{{sar.karat_22}}">عيار 22</option>
+                        <option value="{{sar.karat_21}}">عيار 21</option>
+                        <option value="{{sar.karat_18}}">عيار 18</option>
+                        <option value="{{sar.karat_14}}">عيار 14</option>
                       </select>
                  </span>
               </div>
             </div>
             <div *ngIf="screenWidth<400" class="row">
                 <div class="col-12">
-                    <select dir="rtl"  class="form-select" aria-label="Default select example">
-                        <option selected>اختر العيار</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select style="z-index:-1" [(ngModel)]="multi" dir="rtl"  class="form-select" aria-label="Default select example">
+                        <option value="{{sar.karat_24}}" selected>عيار 24</option>
+                        <option value="{{sar.karat_22}}">عيار 22</option>
+                        <option value="{{sar.karat_21}}">عيار 21</option>
+                        <option value="{{sar.karat_18}}">عيار 18</option>
+                        <option value="{{sar.karat_14}}">عيار 14</option>
                       </select>
                 </div>
                 <div class="col-12">
-                    <input dir="rtl" type="text" class="form-control" value="1" />
+                    <input style="z-index:-1" [(ngModel)]="gram" dir="rtl" type="number" class="form-control" value="1" />
                 </div>
             </div>
          </div>
@@ -44,10 +46,10 @@
          <div class="tablediv col-lg-3 col-md-4 col-6">
             <div class="row shadow d-flex justify-content-end">
                 <div  class="shadow weight col-12 d-flex justify-content-end">
-                <h5>2:الوزن</h5>
+                <h5>الوزن: {{gram}} جرام</h5>
                 </div>
                 <div class="shadow price col-12 d-flex justify-content-end">
-                    <h5>:السعر بالريال</h5>
+                    <h5>{{multi * gram}} :السعر بالريال</h5>
                 </div>
             </div>
         </div>

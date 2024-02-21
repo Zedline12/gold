@@ -5,6 +5,8 @@ import { CalculatorsRoutingModule } from './calculators-routing.module';
 import { PriceCalcComponent } from './price-calc/price-calc.component';
 import { CoreModule } from '../../core/core.module';
 import { ZakaCalcComponent } from './zaka-calc/zaka-calc.component';
+import { TableService } from '../../core/services/tables.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +17,10 @@ import { ZakaCalcComponent } from './zaka-calc/zaka-calc.component';
   imports: [
     CommonModule,
     CalculatorsRoutingModule,
-    CoreModule
+    CoreModule,FormsModule
+  ],
+  providers:[
+    TableService
   ]
 })
 export class CalculatorsModule { }
