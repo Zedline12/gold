@@ -9,7 +9,9 @@ import { Observable } from 'rxjs';
 export class TableService extends api {
 
   constructor(private http:HttpClient) {super() }
-
+  getspot():Observable<any>{
+    return this.http.get(this.url+"/getspot")
+  }
   getusd():Observable<any>{
     return this.http.get(this.url+"/getusd")
   }

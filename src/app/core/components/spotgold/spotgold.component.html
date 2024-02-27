@@ -1,0 +1,69 @@
+<div class="container ">
+   <div class="row mb-3">
+    <div class="col-12 d-flex justify-content-center">
+        <h2>اسعار البيع و الشراء</h2>
+    </div>
+   </div>
+   <div class="row ">
+    <div class="con container ">
+      <div class="row">
+        <div class="sm-con container">
+          <div class="row">
+            <div class="sell  col-sm-6">
+              <div class="row">
+                <div class="col-9 order-1 order-sm-0 d-flex justify-content-sm-end justify-content-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 style="margin-right:5px;" class="selltext text-center">بيع</h5>
+                        </div>
+                        <div class="col-12">
+                            <h3 style="margin-right:5px;" class=" selltext text-center">{{spot.sell}}</h3> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 order-0 order-sm-1 d-flex align-items-center justify-content-end">
+                    <i class="bi bi-caret-up-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="buy  col-sm-6">
+                <div class="row">
+                    <div class="col-3  d-flex align-items-center justify-content-start">
+                        <i class="bi bi-caret-up-fill"></i>
+                    </div>
+                    <div class="col-9  d-flex justify-content-start">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 style="margin-left:5px;" class="buytext text-center">شراء</h5>
+                            </div>
+                            <div class="col-12">
+                                <h3 style="margin-left:5px;" class="buytext text-center">{{spot.buy}}</h3> 
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="decor col-12 d-none d-sm-block">
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center" style="margin-top:2em;">
+            <h3 class="tex-center">{{spot.pts}}pts <span>({{spot.perc}})</span></h3>
+        </div>
+        <div class="col-lg-6 col-9 " style="margin-top:0.5em;">
+           <div class="row">
+            <div class="col-sm-6 d-flex justify-content-center">
+                <h5 class="highlow">high: {{spot.high}}</h5>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center">
+                <h5 class="highlow">low: {{spot.low}}</h5>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>

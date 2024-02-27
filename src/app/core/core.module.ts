@@ -19,6 +19,7 @@ import { CommissionTableComponent } from './components/tables/commission-table/c
 import { KaratComponent } from './components/karat/karat.component';
 import { SbaektableComponent } from './components/tables/sbaektable/sbaektable.component';
 import { PricePipe } from './pipes/price.pipe';
+import { SpotgoldComponent } from './components/spotgold/spotgold.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PricePipe } from './pipes/price.pipe';
     SbaektableComponent,
     KaratComponent,
     PricePipe,
+    SpotgoldComponent,
   ],
   imports: [
     CommonModule,
