@@ -13,8 +13,8 @@
         <div class="inputdiv col-lg-4 col-sm-6 col-8 ">
             <div *ngIf="screenWidth>=400">
               <div class="input-group">
-                 <input style="z-index:-1" [(ngModel)]="gram" dir="rtl" type="text" class="form-control" value="1" />
-                 <span style="z-index:-1"  class="selectspan">
+                 <input style="" [(ngModel)]="gram" dir="rtl" type="text" class="form-control" value="1" />
+                 <span style=""  class="selectspan">
                     <select [(ngModel)]="multi" class="form-select" aria-label="Default select example">
                         <option value="{{sar.karat_24}}" selected>عيار 24</option>
                         <option value="{{sar.karat_22}}">عيار 22</option>
@@ -27,7 +27,7 @@
             </div>
             <div *ngIf="screenWidth<400" class="row">
                 <div class="col-12">
-                    <select style="z-index:-1" [(ngModel)]="multi" dir="rtl"  class="form-select" aria-label="Default select example">
+                    <select style="" [(ngModel)]="multi" dir="rtl"  class="form-select" aria-label="Default select example">
                         <option value="{{sar.karat_24}}" selected>عيار 24</option>
                         <option value="{{sar.karat_22}}">عيار 22</option>
                         <option value="{{sar.karat_21}}">عيار 21</option>
@@ -36,7 +36,7 @@
                       </select>
                 </div>
                 <div class="col-12">
-                    <input style="z-index:-1" [(ngModel)]="gram" dir="rtl" type="number" class="form-control" value="1" />
+                    <input  [(ngModel)]="gram" dir="rtl" type="number" class="form-control" value="1" />
                 </div>
             </div>
          </div>
