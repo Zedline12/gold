@@ -20,6 +20,7 @@ import { KaratComponent } from './components/karat/karat.component';
 import { SbaektableComponent } from './components/tables/sbaektable/sbaektable.component';
 import { PricePipe } from './pipes/price.pipe';
 import { SpotgoldComponent } from './components/spotgold/spotgold.component';
+import { FooterService } from './services/footer.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { SpotgoldComponent } from './components/spotgold/spotgold.component';
     MaintableComponent,
     SbaektableComponent
   ],providers:[
-    BlogService,TableService
+    BlogService,TableService,FooterService
   ]
 })
 export class CoreModule { }
