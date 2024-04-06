@@ -21,6 +21,7 @@ import { SbaektableComponent } from './components/tables/sbaektable/sbaektable.c
 import { PricePipe } from './pipes/price.pipe';
 import { SpotgoldComponent } from './components/spotgold/spotgold.component';
 import { FooterService } from './services/footer.service';
+import { SingleviewComponent } from './components/singleview/singleview.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { FooterService } from './services/footer.service';
     KaratComponent,
     PricePipe,
     SpotgoldComponent,
+    SingleviewComponent,
   ],
   imports: [
     CommonModule,

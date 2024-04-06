@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CoreComponent } from './core/core.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { KaratComponent } from './components/karat/karat.component';
+import { SingleviewComponent } from './components/singleview/singleview.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,9 @@ const routes: Routes = [
   },
   {
     path:"karat/:karat",component:KaratComponent
+  },
+  {
+    path:"singleview",component:SingleviewComponent
   },
   {
     path: 'features',
