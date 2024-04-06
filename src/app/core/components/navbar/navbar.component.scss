@@ -1,6 +1,19 @@
 *{
     font-family:"ltarabic";
 }
+.dropdown-menu li a{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dropdown-menu li a:hover{
+    color:blue;
+}
+.dropdown-menu li {
+    color:black;
+    padding:15px;
+}
 .navbarr{
     background-color: black;;
     color:white;
