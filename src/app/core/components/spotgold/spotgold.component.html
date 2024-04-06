@@ -6,7 +6,9 @@
    </div>
    <div class="row ">
     <div class="con container ">
+      <h4 class="text-center" style="margin-bottom: 1.5em;">سعر الذهب بالدولار في الأسواق العالمية</h4>
       <div class="row">
+       
         <div class="sm-con container">
           <div class="row">
             <div class="sell  col-sm-6">
@@ -51,15 +53,15 @@
       </div>
       <div class="row d-flex justify-content-center">
         <div class="col-12 d-flex justify-content-center" style="margin-top:2em;">
-            <h3 class="tex-center">{{spot.pts}}pts <span>({{spot.perc}})</span></h3>
+            <h3 class="tex-center"><span>({{spot.perc}})</span>{{spot.pts}}الفرق</h3>
         </div>
         <div class="col-lg-6 col-9 " style="margin-top:0.5em;">
            <div class="row">
             <div class="col-sm-6 d-flex justify-content-center">
-                <h5 class="highlow">high: {{spot.high}}</h5>
+                <h5 class="highlow">{{spot.high}} :اعلى سعر</h5>
             </div>
             <div class="col-sm-6 d-flex justify-content-center">
-                <h5 class="highlow">low: {{spot.low}}</h5>
+                <h5 class="highlow">{{spot.low}}  :اقل سعر</h5>
             </div>
            </div>
         </div>
