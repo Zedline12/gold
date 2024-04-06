@@ -1,0 +1,19 @@
+<div class="container-fluid" style="margin-top:9em;">
+    <div class="row d-flex justify-content-center">
+        <div *ngIf="table==0" class=" history col-12" style="margin-top:5em;
+        overflow-y:scroll;">
+            <h4 [routerLink]="['/singleview']" [queryParams]="{table: 'ferret'}" class="lt text-center mb-3">اسعار جرام الذهب في الايام السابقة</h4>
+            <history-table></history-table>
+        </div>
+
+        <div *ngIf="table==1" style="margin-top:5em;">
+            <h4 class="lt text-center mb-3">أسعار الذهب اليوم في السعودية بيع وشراء</h4>
+            <app-commission-table></app-commission-table>
+        </div>
+
+        <div *ngIf="table==2" style="margin-top:5em;">
+            <h4 class="lt text-center mb-3">أسعار شراء سبائك الذهب عيار 24</h4>
+            <app-sbaektable></app-sbaektable>
+        </div>
+    </div>
+</div>
