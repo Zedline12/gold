@@ -8,13 +8,10 @@ import { BlogService } from '../../services/blog.service';
   styleUrl: './blogs.component.scss'
 })
 export class BlogsComponent {
-  blogs:blog[]=[]
   constructor(private blogserv:BlogService){
      
   }
  ngOnInit(): void {
-   this.blogserv.getblogs().subscribe(x=>{
-     this.blogs=x
-   })
+  
  }
 }
