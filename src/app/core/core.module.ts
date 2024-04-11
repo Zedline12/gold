@@ -22,6 +22,7 @@ import { PricePipe } from './pipes/price.pipe';
 import { SpotgoldComponent } from './components/spotgold/spotgold.component';
 import { FooterService } from './services/footer.service';
 import { SingleviewComponent } from './components/singleview/singleview.component';
+import { PageComponent } from './page/page.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SingleviewComponent } from './components/singleview/singleview.componen
     PricePipe,
     SpotgoldComponent,
     SingleviewComponent,
+    PageComponent,
   ],
   imports: [
     CommonModule,
