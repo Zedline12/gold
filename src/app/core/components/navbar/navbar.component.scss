@@ -17,6 +17,10 @@
 .dropdown-menu li {
     color:black;
     padding:15px;
+    transition: 0.3s;
+}
+.dropdown-menu li:hover {
+   background-color: #ededed;
 }
 .navbarr{
     background-color: black;;
