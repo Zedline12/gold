@@ -15,7 +15,8 @@
             <!-- Grid column -->
             <div *ngFor="let item of footer" class="col">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="{{item.link}}" class="text-white">{{item.title}}</a>
+                <a *ngIf="item.html==null" href="{{item.link}}" class="text-white">{{item.title}}</a>
+                <a *ngIf="item.html!=null" [routerLink]="['page',item.title]" class="text-white">{{item.title}}</a>
               </h6>
             </div>
              <div *ngIf="isempty">

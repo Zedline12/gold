@@ -7,7 +7,7 @@ import { FooterService } from '../../services/footer.service';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent implements OnInit {
-  footer!:{id:number,title:string,link:string}[]
+  footer!:{id:number,title:string,link:string,html:string}[]
   isempty:boolean=false
    constructor(public footerserv:FooterService){
 
