@@ -7,6 +7,10 @@
     cursor: pointer;
     transition: 0.3s;
 }
+.dropdown-menu {
+    width:500px !important;
+    margin-top: 1.6em !important;
+  }
 .dropdown-menu li a:hover{
     color:blue;
 }

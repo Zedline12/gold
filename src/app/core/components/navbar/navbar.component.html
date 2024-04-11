@@ -2,14 +2,14 @@
   <div class="  row d-flex justify-content-end">
     <div class="col-xl-2 col-md-3 col-6 d-flex justify-content-start align-items-center">
       <div class="dropdown">
-        
-       <h3 style="margin-left:3em;cursor: pointer;" data-bs-toggle="dropdown">المزيد</h3>
-        <ul style=" overflow-y: scroll;max-height: 300px;" class="dropdown-menu text-center ">
-         <li class="shadow-sm"><a class="text-center" [routerLink]="['/calculators/pricecalc']">حاسبة اسعار الذهب</a></li>
+        <h3 class="blog" style="margin-left:3em;cursor: pointer;" data-bs-toggle="dropdown">المدونات</h3>
+        <ul style="float:left !important;max-height:400px;overflow: auto;" class="dropdown-menu">
+          <li class="shadow-sm"><a class="text-center" [routerLink]="['/calculators/pricecalc']">حاسبة اسعار الذهب</a></li>
             <li><a [routerLink]="['/calculators/zakacalc']">حاسبة زكاة الدهب</a></li>
-            <li *ngFor="let blog of blogs" [routerLink]="[ '/blog',blog.id]"><a>{{blog.blogname}}</a></li>           
+            <li *ngFor="let blog of blogs" [routerLink]="[ '/blog',blog.id]"><a dir="rtl" >{{blog.blogname}}</a></li>       
         </ul>
       </div>
+    
     </div>
      <div class="d-md-block d-none col-xl-8 col-6">
       <div class="row d-flex justify-content-center" style="margin-top:7px;">
@@ -28,7 +28,7 @@
       </div>
      </div>
     <div style="cursor:pointer;" [routerLink]="['/home']" class="col-xl-2 col-md-3 col-6  d-flex justify-content-end align-items-center "style="padding:0px;">
-        <img  class="logo" alt="أسعار الذهب" src="assets/images/icon.png"/>
+        <img  style="cursor:pointer;" class="logo" alt="أسعار الذهب" src="assets/images/icon.png"/>
       </div>
   </div>
 </div>

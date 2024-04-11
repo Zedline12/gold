@@ -12,4 +12,8 @@ export class FooterService extends api {
   getfooter():Observable<any>{
     return this.http.get(this.url+"/getfooter")
   }
+  getfooterbytitle(title:string):Observable<any>{
+    return this.http.get(this.url+`/admin/getfooterbytitle/${title}`)
+  }
+ 
 }
