@@ -25,7 +25,7 @@ const routes: Routes = [
     path:"karat/:karat",component:KaratComponent
   },
   {
-    path:"singleview",component:SingleviewComponent
+    path:"tablesv",component:SingleviewComponent
   },
   {
     path: 'features',

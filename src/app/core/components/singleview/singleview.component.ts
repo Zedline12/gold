@@ -18,7 +18,7 @@ export class SingleviewComponent implements OnInit {
     }
     ngOnInit(): void {
       window.scroll(0,0);
-      const table=this.route.snapshot.queryParamMap.get("table")
+      const table=this.route.snapshot.queryParamMap.get("t")
       switch(table){
         case "pastdaysprice" :
           this.table=tables.pastdaysprice

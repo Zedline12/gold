@@ -31,10 +31,9 @@
     z-index: 100;
 }
 .navbarr .logo{
-    width:40px;
+    width:80px;
     margin-right:25%;
     padding:0px;
-    height:40px;
 }
 .navbarr h5{
     font-size:1em;
@@ -48,8 +47,7 @@ a,li a{
 @media(max-width:309px){
     .navbarr .logo{
         margin-right:15% !important;
-        width:35px !important;
-        height:35px !important;
+        width:70px !important;
     }
     .blog{
         font-size:1.4em !important;
@@ -59,8 +57,7 @@ a,li a{
 @media(max-width:350px) and (min-width:310px){
     .navbarr .logo{
         margin-right:15% !important;
-        width:35px !important;
-        height:35px !important;
+        width:70px !important;
     }
     .blog{
         font-size:1.5em !important;
